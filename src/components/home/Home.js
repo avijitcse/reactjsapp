@@ -36,7 +36,7 @@ class Home extends Component {
           <Nav />
           
           <div>
-          <h3 className="text-center"><img src={owner.avatar_url} alt="" height="100"/> {owner.name}'s Repositories</h3>
+          <h3 className="text-center"><img src={owner.avatar_url} alt="" height="100"/> {owner.name}&apos;s Repositories</h3>
           <hr/>
           </div>
         
