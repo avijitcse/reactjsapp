@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import '../../index.css';
-import Home from '../home/Home';
 
 export default class Nav extends Component {
   render() {
     return (
-      <Router>
+      // <Router>
       <nav className="navbar navbar-default">
         <div className="navbar-header">
         <Link className="navbar-brand" to="/">Chuck Norris World</Link>
@@ -16,7 +15,7 @@ export default class Nav extends Component {
             <Link to="/">Food Jokes</Link>
           </li>
           <li>
-           {/* <Link to="/special">Celebrity Jokes</Link> */}
+           <Link to="/feedback">Feedback</Link>
           </li>
         </ul>
         {/* <ul className="nav navbar-nav navbar-right">
@@ -24,12 +23,12 @@ export default class Nav extends Component {
           <li><button className="btn btn-danger log">Log out </button></li>
         </ul> */}
 
-        <Switch>
+        {/* <Switch>
           <Route exact path="/" Component={Home} />
-          {/* <Route exact path="" Component={} /> */}
-        </Switch>
+          <Route exact path="/feedback" Component={Feedback} />
+        </Switch> */}
       </nav>
-      </Router>
+      // </Router>
     )
   }
 }
